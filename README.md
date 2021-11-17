@@ -19,3 +19,16 @@ DevStudy TIL
     - Python : 2.7.18
         > react native 빌드 시스템은 python에 의존하고 있기 때문에 설치 필요
     - Java(openjdk) : "14.0.1" 2020-04-14
+
+### Git 연동
+- VS Code
+    - Source control > Initialize Repository로 신규생성
+    - 로컬저장소에 먼저 commit필요
+        1. Source control > Changes 아이콘 중 + 아이콘 클릭
+        2. 체크 아이콘 클릭 > 메모 작성하여 엔터
+    - github에 업로드
+        1. Views > Terminal
+        2. 원격 저장소 지정 명령어 : git remote add origin [저장소 url 주소]
+        3. 원격 저장소의 내용을 로컬 저장소로 반영 : git pull origin main --allow-unrelated-histories
+        4. 로컬 저장소에 push한 내용을 원격 저장소에 반영 : git push -u origin master
+        5. push 내용을 github에서 확인
