@@ -1,0 +1,14 @@
+com/devstudy/BuildConfig.java
+ com.devstudy.BuildConfig
+com/devstudy/MainApplication.java
+ com.devstudy.MainApplication
+ com.devstudy.MainApplication$1
+com/devstudy/ReactNativeFlipper.java
+ com.devstudy.ReactNativeFlipper
+ com.devstudy.ReactNativeFlipper$1
+ com.devstudy.ReactNativeFlipper$2
+ com.devstudy.ReactNativeFlipper$2$1
+com/devstudy/MainActivity.java
+ com.devstudy.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
