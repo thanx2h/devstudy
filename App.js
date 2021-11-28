@@ -1,22 +1,27 @@
 
-import React from 'react';
-import type { Node } from 'react';
+import React, { Component } from 'react';
+import Main from './src/screens/Main'
 import {
   StyleSheet,
   Text,
-  TextInput,
-  Button,
-  useColorScheme,
-  View,
+  View
 } from 'react-native';
 
-const App: () => Node = () => {
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-  return (
-    <View style={styles.container}>
-        <Text>Hello Dev Study</Text>
-    </View>
-  );
+const Stack = createNativeStackNavigator();
+
+export default class App extends Component {
+  render(){
+    return (
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Main" component={Main} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    );
+  }
 };
 
 const styles = StyleSheet.create({
@@ -26,5 +31,3 @@ const styles = StyleSheet.create({
     alignItems : 'center'
   }
 });
-
-export default App;
