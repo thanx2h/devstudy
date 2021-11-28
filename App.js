@@ -1,6 +1,5 @@
 import 'react-native-gesture-handler';
 
-// Import React and Component
 import React from 'react';
 
 // Import Navigators from React Navigation
@@ -8,10 +7,10 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
 // Import Screens
-import SplashScreen from './Screen/SplashScreen';
-import LoginScreen from './Screen/LoginScreen';
-import RegisterScreen from './Screen/RegisterScreen';
-import DrawerNavigationRoutes from './Screen/DrawerNavigationRoutes';
+import SplashScreen from './src/screens/SplashScreen';
+import LoginScreen from './src/screens/LoginScreen';
+import RegisterScreen from './src/screens/RegisterScreen';
+import DrawerNavigationRoutes from './src/screens/DrawerNavigationRoutes';
 
 const Stack = createStackNavigator();
 

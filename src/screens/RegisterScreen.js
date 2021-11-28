@@ -15,7 +15,7 @@ import {
   ScrollView,
 } from 'react-native';
 
-import Loader from './Components/Loader';
+import Loader from '../components/Loader';
 
 const RegisterScreen = (props) => {
   const [userName, setUserName] = useState('');
@@ -113,7 +113,7 @@ const RegisterScreen = (props) => {
           justifyContent: 'center',
         }}>
         <Image
-          source={require('../Image/success.png')}
+          source={require('../assets/image/success.png')}
           style={{
             height: 150,
             resizeMode: 'contain',
@@ -143,7 +143,7 @@ const RegisterScreen = (props) => {
         }}>
         <View style={{alignItems: 'center'}}>
           <Image
-            source={require('../Image/goal.png')}
+            source={require('../assets/image/goal.png')}
             style={{
               width: '50%',
               height: 100,

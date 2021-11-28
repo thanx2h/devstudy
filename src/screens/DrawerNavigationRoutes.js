@@ -11,8 +11,8 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 // Import Screens
 import HomeScreen from './DrawerScreens/HomeScreen';
 import SettingsScreen from './DrawerScreens/SettingsScreen';
-import CustomSidebarMenu from './Components/CustomSidebarMenu';
-import NavigationDrawerHeader from './Components/NavigationDrawerHeader';
+import CustomSidebarMenu from '../components/CustomSidebarMenu';
+import NavigationDrawerHeader from '../components/NavigationDrawerHeader';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();

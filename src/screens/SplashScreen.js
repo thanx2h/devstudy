@@ -33,7 +33,7 @@ const SplashScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../Image/goal.png')}
+        source={require('../assets/image/goal.png')}
         style={{width: '90%', resizeMode: 'contain', margin: 30}}
       />
       <ActivityIndicator
