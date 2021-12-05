@@ -9,7 +9,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
 // Import Screens
-import HomeScreen from './DrawerScreens/HomeScreen';
+// import HomeScreen from './DrawerScreens/HomeScreen';
+import MainScreen from './DrawerScreens/MainScreen';
 import SettingsScreen from './DrawerScreens/SettingsScreen';
 import CustomSidebarMenu from '../components/CustomSidebarMenu';
 import NavigationDrawerHeader from '../components/NavigationDrawerHeader';
@@ -19,10 +20,10 @@ const Drawer = createDrawerNavigator();
 
 const homeScreenStack = ({navigation}) => {
   return (
-    <Stack.Navigator initialRouteName="HomeScreen">
+    <Stack.Navigator initialRouteName="MainScreen">
       <Stack.Screen
-        name="HomeScreen"
-        component={HomeScreen}
+        name="MainScreen"
+        component={MainScreen}
         options={{
           title: '홈', //Set Header Title
           headerLeft: () => (
