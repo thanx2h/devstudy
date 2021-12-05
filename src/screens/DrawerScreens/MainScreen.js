@@ -2,7 +2,11 @@
 const users = [
   {
     name: 'jd',
-    avatar: '../assets/test1.jpg'
+    avatar: require('../../assets/image/test1.jpg')
+  }, 
+  {
+    name: 'jd',
+    avatar: require('../../assets/image/test1.jpg')
   }
 ]
 
@@ -18,17 +22,16 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Card, ListItem, Button, Icon } from 'react-native-elements'
 
-export default class Main extends Component {
+export default class MainScreen extends Component {
   render() {
     return (
       <Card>
-        <Card.Title>CARD WITH DIVIDER</Card.Title>
-        <Card.Divider />
         {users.map((u, i) => {
+          <Card.Divider/>
           return (
-            <View key={i} style={styles.user}>
-              <Image style={styles.image} resizeMode="cover" source={{ uri: u.avatar }} />
-              <Text style={styles.name}>{u.name}</Text>
+            <View key={i}>
+              <Text> {u.name}</Text>
+              <Image style={{width: 200, height: 200}} resizeMode="cover" source={u.avatar} />
             </View>);
         })
         }
