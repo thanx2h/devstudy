@@ -7,5 +7,8 @@ DevStudy TIL
 
 # Index
 - [개발 환경 셋팅](https://github.com/thanx2h/devstudy/blob/main/doc/dev_environment_setting.md)
-- [React Native 이론](https://github.com/thanx2h/devstudy/blob/main/doc/React_Native_theory.md)
 - [프로젝트 폴더구조](https://github.com/thanx2h/devstudy/blob/main/doc/folder_structure.md)
+- React Native
+  - [React Native 이론](https://github.com/thanx2h/devstudy/blob/main/doc/react_native/theory.md)
+  - [Components에 관하여](https://github.com/thanx2h/devstudy/blob/main/doc/react_native/components.md)
+
